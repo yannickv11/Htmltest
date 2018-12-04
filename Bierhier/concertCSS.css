@@ -1,0 +1,154 @@
+* {
+   padding: 0px;
+    margin: 0px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 500px 500px 1fr ;
+    grid-template-rows: 1fr   ;
+    grid-template-areas:
+".header header."
+".plaatje tabel."
+".meer meer."
+".footer footer.";
+    grid-gap: 10px;
+}
+
+nav ul li {
+    font-size: 1.5em;
+}
+
+.header {
+    grid-area: header;
+    background-color: lightblue;
+}
+
+.plaatje {
+    grid-area: plaatje;
+    justify-self: start;
+    margin-top: 58px;
+}
+.tabel {
+    grid-area: tabel;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.meer {
+    grid-area: meer;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.footer {
+    grid-area: footer;
+    background-color: rgb(128,128,128);
+    color: white;
+    clear: both;
+}
+
+li {
+    display: inline-block;
+    padding-left: 20px;
+}
+li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px;
+}
+@media all and (max-width: 1048px) {
+    .grid {
+        grid-template-areas: "header header"
+        "plaatje plaatje"
+        "tabel tabel"
+        "meer meer"
+        "footer footer";
+    }
+
+    .header {
+        width: 1048px;
+    }
+    .plaatje {
+        margin-left: 10px;
+        width: 100%;
+    }
+
+    .footer {
+        width: 1048px;
+    }
+
+    .meer {
+        display: grid;
+        flex-flow: row;
+        margin-left: 10px;
+
+    }
+    .tabel {
+        display: flex;
+        align-items: flex-start;
+        margin-left: 10px;
+    }
+}
+
+@media all and (max-width: 700px ) {
+    .grid {
+        grid-template-areas: "header header"
+        "plaatje plaatje"
+        "tabel tabel"
+        "meer meer"
+        "footer footer";
+    }
+
+    .meer {
+        flex-flow: column;
+        margin-left: 10px;
+    }
+
+    .header {
+        width: 700px;
+    }
+
+    ul {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+
+    li {
+        display: inline-block;
+        border-top: 1px solid white;
+    }
+    .plaatje {
+        margin-left: 10px;
+    }
+
+    .tabel {
+        display: flex;
+        align-items: flex-start;
+        margin-left: 10px;
+    }
+
+    .footer {
+        width: 700px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
