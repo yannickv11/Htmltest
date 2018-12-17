@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/PhpstormProjects/Htmlchallange/.idea/Htmlchallange.iml" filepath="$USER_HOME$/PhpstormProjects/Htmlchallange/.idea/Htmlchallange.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Htmltest.iml" filepath="$PROJECT_DIR$/.idea/Htmltest.iml" />
     </modules>
   </component>
